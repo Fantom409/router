@@ -46,7 +46,7 @@ interface RouteCollectorInterface
     public function hasDispatcher(): bool;
 
     /**
-     * @return Route|Group[]
+     * @return Route[]|Group[]
      */
     public function getItems(): array;
 }

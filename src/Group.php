@@ -33,7 +33,7 @@ final class Group implements RouteCollectorInterface
      *
      * @param string|null $prefix
      * @param callable|array $routes
-     * @param MiddlewareDispatcher $dispatcher
+     * @param MiddlewareDispatcher|null $dispatcher
      *
      * @return self
      */
@@ -137,7 +137,7 @@ final class Group implements RouteCollectorInterface
     }
 
     /**
-     * @return Route|Group[]
+     * @return Route[]|Group[]
      */
     public function getItems(): array
     {
